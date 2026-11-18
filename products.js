@@ -1,0 +1,91 @@
+/* EDIT THIS FILE to add, remove, or update products. Keep affiliateUrl exactly as supplied by your affiliate platform. */
+window.RELO_PRODUCTS = [
+  {
+    "id": "demo-001",
+    "name": "Everyday Structured Tote",
+    "category": "Bags",
+    "price": "",
+    "currency": "INR",
+    "description": "A versatile tote for everyday outfits and essentials.",
+    "platform": "Add retailer",
+    "imageUrl": "",
+    "affiliateUrl": "",
+    "tags": [
+      "everyday",
+      "minimal",
+      "work"
+    ],
+    "featured": true,
+    "active": true
+  },
+  {
+    "id": "demo-002",
+    "name": "Minimal Gold-Tone Hoops",
+    "category": "Jewellery",
+    "price": "",
+    "currency": "INR",
+    "description": "Simple hoops that work with casual and dressed-up looks.",
+    "platform": "Add retailer",
+    "imageUrl": "",
+    "affiliateUrl": "",
+    "tags": [
+      "minimal",
+      "gold",
+      "everyday"
+    ],
+    "featured": true,
+    "active": true
+  },
+  {
+    "id": "demo-003",
+    "name": "Classic White Sneakers",
+    "category": "Shoes",
+    "price": "",
+    "currency": "INR",
+    "description": "A clean, easy-to-style sneaker silhouette.",
+    "platform": "Add retailer",
+    "imageUrl": "",
+    "affiliateUrl": "",
+    "tags": [
+      "casual",
+      "basics"
+    ],
+    "featured": false,
+    "active": true
+  },
+  {
+    "id": "demo-004",
+    "name": "Soft Everyday Shirt",
+    "category": "Clothing",
+    "price": "",
+    "currency": "INR",
+    "description": "An easy wardrobe layer for relaxed, polished outfits.",
+    "platform": "Add retailer",
+    "imageUrl": "",
+    "affiliateUrl": "",
+    "tags": [
+      "basics",
+      "casual"
+    ],
+    "featured": true,
+    "active": true
+  },
+  {
+    "id": "demo-005",
+    "name": "Pastel Hair Clip Set",
+    "category": "Accessories",
+    "price": "",
+    "currency": "INR",
+    "description": "A small finishing touch for simple everyday styling.",
+    "platform": "Add retailer",
+    "imageUrl": "",
+    "affiliateUrl": "",
+    "tags": [
+      "pastel",
+      "hair",
+      "accessories"
+    ],
+    "featured": false,
+    "active": true
+  }
+];

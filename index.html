@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8e9ed">
+  <meta name="description" content="Discover curated fashion, bags, jewellery, shoes and accessories at RELO. Explore affordable style finds from independent retailers and shopping platforms.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RELO — Discover Your Style">
+  <meta property="og:description" content="Curated fashion finds, everyday essentials and accessories.">
+  <title>RELO — Discover Your Style</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "RELO",
+    "description": "A curated fashion discovery storefront.",
+    "inLanguage": "en"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="top-note">A little inspiration for your everyday style</div>
+    <div class="nav-wrap">
+      <a class="wordmark" href="#home" aria-label="RELO home">RELO<span>.</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home" data-nav="home">Home</a>
+        <a href="#category/Clothing" data-nav="Clothing">Clothing</a>
+        <a href="#category/Bags" data-nav="Bags">Bags</a>
+        <a href="#category/Jewellery" data-nav="Jewellery">Jewellery</a>
+        <a href="#category/Shoes" data-nav="Shoes">Shoes</a>
+        <a href="#category/Accessories" data-nav="Accessories">Accessories</a>
+      </nav>
+      <button class="mobile-menu" id="mobileMenu" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="#home">Home</a><a href="#category/Clothing">Clothing</a><a href="#category/Bags">Bags</a>
+      <a href="#category/Jewellery">Jewellery</a><a href="#category/Shoes">Shoes</a><a href="#category/Accessories">Accessories</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">THE STYLE EDIT</p>
+        <h1>Find pieces.<br><em>Feel like you.</em></h1>
+        <p class="hero-text">A considered collection of fashion finds, everyday essentials and little details that make an outfit yours.</p>
+        <a class="primary-button" href="#shop">Explore the edit <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-art" aria-label="Abstract pastel fashion editorial artwork" role="img">
+        <div class="art-circle"></div><div class="art-arch"></div><div class="art-caption">YOUR<br>STYLE,<br>YOUR WAY.</div>
+      </div>
+    </section>
+
+    <section class="category-strip" aria-label="Shop by category">
+      <a href="#category/Clothing">Clothing <span>↗</span></a>
+      <a href="#category/Bags">Bags <span>↗</span></a>
+      <a href="#category/Jewellery">Jewellery <span>↗</span></a>
+      <a href="#category/Shoes">Shoes <span>↗</span></a>
+      <a href="#category/Accessories">Accessories <span>↗</span></a>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE RELO COLLECTION</p><h2 id="collectionTitle">Fresh finds, thoughtfully picked.</h2></div>
+        <p class="section-intro" id="collectionIntro">Browse the edit and find your next favourite.</p>
+      </div>
+      <div class="toolbar">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products"></label>
+        <label class="filter-label">Category
+          <select id="categoryFilter" aria-label="Filter by category">
+            <option value="All">All categories</option><option>Clothing</option><option>Bags</option><option>Jewellery</option><option>Shoes</option><option>Accessories</option>
+          </select>
+        </label>
+        <label class="filter-label">Sort
+          <select id="sortFilter" aria-label="Sort products">
+            <option value="featured">Featured</option><option value="name">Name: A–Z</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option>
+          </select>
+        </label>
+        <button class="clear-button" id="clearFilters" type="button">Clear filters</button>
+      </div>
+      <p class="results-count" id="resultsCount" aria-live="polite"></p>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <div class="empty-icon">✳</div><h3>No finds in this search.</h3><p>Try another keyword or clear your filters.</p>
+      </div>
+    </section>
+
+    <section class="about-band" id="about">
+      <div class="about-mark">R.</div>
+      <div><p class="eyebrow">A NOTE FROM RELO</p><h2>Good style is personal.</h2><p>RELO is a fashion discovery space for pieces that feel wearable, expressive and easy to make your own. We bring together finds from different shopping platforms so you can explore in one place.</p></div>
+    </section>
+
+    <section class="disclosure-section" id="disclosure">
+      <p class="eyebrow">TRANSPARENCY, ALWAYS</p><h2>Affiliate disclosure</h2>
+      <p>Some links on RELO are affiliate links. If you click one and make a purchase, RELO may earn a commission at no additional cost to you. Affiliate relationships do not guarantee product quality or suitability. Product prices, stock, shipping, return policies and terms are controlled by the retailer and may change. Please review all details on the retailer’s website before purchasing.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark footer-logo" href="#home">RELO<span>.</span></a>
+    <p>Discover Your Style.</p>
+    <div class="footer-links"><a href="#about">About</a><a href="#disclosure">Affiliate disclosure</a><a href="mailto:hello@example.com">Contact</a></div>
+    <small>© <span id="year"></span> RELO. Product details belong to their respective retailers.</small>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
