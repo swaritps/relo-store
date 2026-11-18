@@ -36,6 +36,40 @@ window.RELO_PRODUCTS = [
     "active": true
   },
   {
+    "id": "cloth-001",
+    "name": "JC JUMMY COUTURE Trending flakit top",
+    "category": "Clothing",
+    "price": "₹300",
+    "currency": "INR",
+    "description": "JC JUMMY COUTURE Trending flakit top
+Name: JC JUMMY COUTURE Trending flakit top
+Fabric: Lycra
+Sleeve Length: Long Sleeves
+Pattern: Ribbed
+Net Quantity (N): 1
+Sizes:
+S (Bust Size: 27 in, Length Size: 21 in) 
+XS (Bust Size: 26 in, Length Size: 20 in) 
+L (Bust Size: 32 in, Length Size: 23 in) 
+M (Bust Size: 30 in, Length Size: 22 in) 
+
+JC JUMMY COUTURE Flakit top for women, trending top, new fashion for women, summer top,womens top,
+Country of Origin: India",
+    "platform": "Meesho",
+    "imageUrls": [
+  "https://raw.githubusercontent.com/swaritps/relo-store/main/images/001.png",
+  "https://raw.githubusercontent.com/swaritps/relo-store/main/images/002.png",
+  "https://raw.githubusercontent.com/swaritps/relo-store/main/images/003.png"
+],
+    "affiliateUrl": "https://www.meesho.com/af_invite/615909156:youtube_long_form:16323970?p_id=687606283&ext_id=bddsej&utm_source=youtube_long_form",
+    "tags": [
+      "basics",
+      "casual"
+    ],
+    "featured": true,
+    "active": true
+  },
+  {
     "id": "shoe-001",
     "name": "Classic White Sneakers",
     "category": "Shoes",
