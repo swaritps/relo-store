@@ -44,9 +44,9 @@ window.RELO_PRODUCTS = [
   "description": "Women's ribbed Lycra flared top with long sleeves. Available in XS, S, M and L. Made in India.",
   "platform": "Meesho",
   "imageUrls": [
-    "https://raw.githubusercontent.com/swaritps/relo-store/main/images/001.png",
-    "https://raw.githubusercontent.com/swaritps/relo-store/main/images/002.png",
-    "https://raw.githubusercontent.com/swaritps/relo-store/main/images/003.png"
+    "https://raw.githubusercontent.com/swaritps/relo-store/main/images/001.webp",
+    "https://raw.githubusercontent.com/swaritps/relo-store/main/images/002.webp",
+    "https://raw.githubusercontent.com/swaritps/relo-store/main/images/003.webp"
   ],
   "affiliateUrl": "https://www.meesho.com/af_invite/615909156:youtube_long_form:16323970?p_id=687606283&ext_id=bddsej&utm_source=youtube_long_form",
   "tags": ["basics", "casual", "women", "top"],
