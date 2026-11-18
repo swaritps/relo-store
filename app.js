@@ -8,12 +8,12 @@ const validUrl=u=>typeof u==="string"&&/^https?:\/\//i.test(u);
 function imageList(p){const arr=Array.isArray(p.imageUrls)?p.imageUrls.filter(validUrl):[];if(arr.length)return arr;return validUrl(p.imageUrl)?[p.imageUrl]:[]}
 function gallery(p){
  const box=document.createElement("div");box.className="product-gallery";const urls=imageList(p);let i=0;
- const img=document.createElement("img");img.className="gallery-image";img.alt=p.name||"Product";img.loading="lazy";
+ const img=document.createElement("img"); img.className="gallery-image"; img.alt=p.name||"Product"; img.loading="eager"; img.fetchPriority="high"; img.decoding="async";
  const placeholder=document.createElement("span");placeholder.className="product-placeholder";placeholder.textContent="RELO";
  const prev=document.createElement("button");prev.className="gallery-arrow prev";prev.type="button";prev.textContent="‹";prev.setAttribute("aria-label","Previous image");
  const next=document.createElement("button");next.className="gallery-arrow next";next.type="button";next.textContent="›";next.setAttribute("aria-label","Next image");
  const dots=document.createElement("div");dots.className="gallery-dots";
- function show(){if(!urls.length){if(!box.contains(placeholder))box.append(placeholder);return}placeholder.remove();img.src=urls[i];img.alt=`${p.name||"Product"} image ${i+1} of ${urls.length}`;if(!box.contains(img))box.append(img);prev.hidden=next.hidden=urls.length<2;dots.querySelectorAll("button").forEach((b,j)=>b.classList.toggle("active",j===i))}
+ function show(){   if(!urls.length){     if(!box.contains(placeholder)) box.append(placeholder);     return;   }    placeholder.remove();    img.alt=`${p.name||"Product"} image ${i+1} of ${urls.length}`;    if(img.src !== urls[i]){     img.src = urls[i];   }    if(!box.contains(img)) box.append(img);    prev.hidden = next.hidden = urls.length < 2;    dots.querySelectorAll("button").forEach((b,j)=>{     b.classList.toggle("active",j===i);   });    // Preload the next image after the current image loads   if(!img.dataset.preloaded){     img.dataset.preloaded = "true";     img.onload = () => {       const nextImage = new Image();       nextImage.src = urls[(i+1)%urls.length];     };   } }
  urls.forEach((_,j)=>{const d=document.createElement("button");d.type="button";d.className="gallery-dot";d.setAttribute("aria-label",`Show image ${j+1}`);d.addEventListener("click",()=>{i=j;show()});dots.append(d)});
  prev.addEventListener("click",()=>{i=(i-1+urls.length)%urls.length;show()});next.addEventListener("click",()=>{i=(i+1)%urls.length;show()});
  if(urls.length)box.append(img,prev,next,dots);else box.append(placeholder);
