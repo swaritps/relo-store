@@ -141,14 +141,7 @@
     } else {
       box.append(placeholder);
     }
-
-    if (p.featured) {
-      const tag = document.createElement("span");
-      tag.className = "product-tag";
-      tag.textContent = "The edit";
-      box.append(tag);
-    }
-
+    
     let start = null;
 
     box.addEventListener("touchstart", e => {
