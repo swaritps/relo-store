@@ -16,7 +16,7 @@ function gallery(p){
  function show(){   if(!urls.length){     if(!box.contains(placeholder)) box.append(placeholder);     return;   }    placeholder.remove();    img.alt=`${p.name||"Product"} image ${i+1} of ${urls.length}`;    if(img.src !== urls[i]){     img.src = urls[i];   }    if(!box.contains(img)) box.append(img);    prev.hidden = next.hidden = urls.length < 2;    dots.querySelectorAll("button").forEach((b,j)=>{     b.classList.toggle("active",j===i);   });    // Preload the next image after the current image loads   if(!img.dataset.preloaded){     img.dataset.preloaded = "true";     img.onload = () => {       const nextImage = new Image();       nextImage.src = urls[(i+1)%urls.length];     };   } }
  urls.forEach((_,j)=>{const d=document.createElement("button");d.type="button";d.className="gallery-dot";d.setAttribute("aria-label",`Show image ${j+1}`);d.addEventListener("click",()=>{i=j;show()});dots.append(d)});
  prev.addEventListener("click",()=>{i=(i-1+urls.length)%urls.length;show()});next.addEventListener("click",()=>{i=(i+1)%urls.length;show()});
- if(urls.length)box.append(img,prev,next,dots);else box.append(placeholder);
+ if (urls.length) {   box.append(img, prev, next, dots);   show(); } else {   box.append(placeholder); }
  if(p.featured){const tag=document.createElement("span");tag.className="product-tag";tag.textContent="The edit";box.append(tag)}
  let start=null;box.addEventListener("touchstart",e=>{start=e.touches[0].clientX},{passive:true});box.addEventListener("touchend",e=>{if(start===null||urls.length<2)return;const dx=e.changedTouches[0].clientX-start;if(Math.abs(dx)>35){i=(i+(dx<0?1:-1)+urls.length)%urls.length;show()}start=null},{passive:true});
  return box;
