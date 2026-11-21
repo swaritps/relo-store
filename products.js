@@ -53,6 +53,23 @@ window.RELO_PRODUCTS = [
   "featured": true,
   "active": true
 },
+{
+  "id": "cloth-002",
+  "name": "FUNKY MONKEY Women's Cropped Zip-Up Hoodie",
+  "category": "Clothing",
+  "price": "599",
+  "currency": "INR",
+  "description": "Women's cropped zip-up hoodie made with soft cotton-blend fleece, featuring a drawstring hood and kangaroo pockets. Available in XS, S, M, L, XL and 2XL.",
+  "platform": "Amazon",
+  "imageUrls": [
+    "https://raw.githubusercontent.com/swaritps/relo-store/main/images/004.webp",
+    "https://raw.githubusercontent.com/swaritps/relo-store/main/images/005.webp"
+  ],
+  "affiliateUrl": "https://link.amazon/B0f3MHezh",
+  "tags": ["winter", "casual", "women", "hoodie", "streetwear", "cropped"],
+  "featured": true,
+  "active": true
+},
   {
     "id": "shoe-001",
     "name": "Classic White Sneakers",
