@@ -1,6 +1,5 @@
 /* Edit products here. imageUrls accepts multiple public image URLs. */
 window.RELO_PRODUCTS = [
-  
 {
   "id": "bag-001",
   "name": "THE SACK CO. Large Canvas Tote Bag for Women",
@@ -25,8 +24,8 @@ window.RELO_PRODUCTS = [
   ],
   "featured": true,
   "active": true
-},
-  {
+  },
+{
     "id": "jewel-001",
     "name": "Minimal Gold-Tone Hoops",
     "category": "Jewellery",
