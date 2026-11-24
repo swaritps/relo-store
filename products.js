@@ -2,14 +2,18 @@
 window.RELO_PRODUCTS = [
   {
     "id": "bag-001",
-    "name": "Everyday Structured Tote",
+    "name": "THE SACK CO. Large Canvas Tote Bag for Women",
     "category": "Bags",
-    "price": "",
+    "price": "249",
     "currency": "INR",
     "description": "A versatile tote for everyday outfits and essentials.",
-    "platform": "Add retailer",
-    "imageUrls": [],
-    "affiliateUrl": "",
+    "platform": "Amazon",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/swaritps/relo-store/main/images/006.webp"
+      "https://raw.githubusercontent.com/swaritps/relo-store/main/images/007.webp"
+      "https://raw.githubusercontent.com/swaritps/relo-store/main/images/008.webp"
+    ],
+    "affiliateUrl": "https://link.amazon/B00CDUlHy",
     "tags": [
       "everyday",
       "minimal",
