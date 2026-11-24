@@ -1,27 +1,31 @@
 /* Edit products here. imageUrls accepts multiple public image URLs. */
 window.RELO_PRODUCTS = [
-  {
-    "id": "bag-001",
-    "name": "THE SACK CO. Large Canvas Tote Bag for Women",
-    "category": "Bags",
-    "price": "249",
-    "currency": "INR",
-    "description": "A versatile tote for everyday outfits and essentials.",
-    "platform": "Amazon",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/swaritps/relo-store/main/images/006.webp"
-      "https://raw.githubusercontent.com/swaritps/relo-store/main/images/007.webp"
-      "https://raw.githubusercontent.com/swaritps/relo-store/main/images/008.webp"
-    ],
-    "affiliateUrl": "https://link.amazon/B00CDUlHy",
-    "tags": [
-      "everyday",
-      "minimal",
-      "work"
-    ],
-    "featured": true,
-    "active": true
-  },
+  
+{
+  "id": "bag-001",
+  "name": "THE SACK CO. Large Canvas Tote Bag for Women",
+  "category": "Bags",
+  "price": "249",
+  "currency": "INR",
+  "description": "Women's lightweight cotton canvas tote bag with a spacious design, zipper closure and inner pocket. Perfect for college, office, shopping and everyday use.",
+  "platform": "Amazon",
+  "imageUrls": [
+    "https://raw.githubusercontent.com/swaritps/relo-store/main/images/006.webp",
+    "https://raw.githubusercontent.com/swaritps/relo-store/main/images/007.webp",
+    "https://raw.githubusercontent.com/swaritps/relo-store/main/images/008.webp"
+  ],
+  "affiliateUrl": "https://link.amazon/B00CDUlHy",
+  "tags": [
+    "everyday",
+    "casual",
+    "women",
+    "tote",
+    "college",
+    "bags"
+  ],
+  "featured": true,
+  "active": true
+},
   {
     "id": "jewel-001",
     "name": "Minimal Gold-Tone Hoops",
